@@ -484,7 +484,7 @@ body {
     border-top: 1px solid #777;
     padding-top: 2rem;
     width: 80%;
-    float: right; }
+    display: inline-block; }
 
 .row {
   max-width: 114rem;
@@ -529,6 +529,69 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  top: 6rem;
+  right: 6rem;
+  position: fixed;
+  z-index: 2000;
+  border-radius: 50%; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  top: 6.5rem;
+  right: 6.5rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1000;
+  transform: scale(50);
+  background-image: radial-gradient(#28b485, #55c57a); }
+
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
+.navigation__list {
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%); }
+
+.navigation__item {
+  margin: 1rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-size: 220%;
+  transition: all 0.4s;
+  background-image: linear-gradient(120deg, transparent 0, transparent 50%, #fff 50%); }
+  .navigation__link:link span, .navigation__link:visited span {
+    display: inline-block;
+    margin-right: 1.5rem; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #7ed56f;
+  transform: translateX(1rem); }
 
 .section-about {
   background-color: #f7f7f7;
