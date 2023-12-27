@@ -9,6 +9,22 @@
 html {
   /* font-size: 10px; */
   font-size: 62.5%;
+
+  @include responed(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include responed(tab-port) {
+    font-size: 50%;
+  }
+
+  @include responed(phone) {
+    font-size: 30%;
+  }
+
+  @include responed(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 body {
