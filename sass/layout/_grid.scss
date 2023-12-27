@@ -3,6 +3,15 @@
   margin: 0 auto;
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include responed(phone) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include responed(phone) {
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   @include clearfix;
@@ -11,6 +20,15 @@
     float: left;
     &:not(:last-child) {
       margin-right: $gutter-horizantal;
+
+      @include responed(phone) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include responed(phone) {
+      width: 100% !important;
     }
   }
 
